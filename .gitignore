@@ -1,0 +1,4 @@
+dist/*
+src/pug/index.html
+node_modules
+.DS_Store

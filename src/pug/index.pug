@@ -1,0 +1,201 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Rhombus: Design Studio
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+
+        // Font Awesome icons (free version)
+        script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js', crossorigin='anonymous')
+
+        // Google fonts
+        link(href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic', rel='stylesheet', type='text/css')
+
+        // Third party plugin CSS
+        link(href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css', rel='stylesheet')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#page-top
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
+            .container
+                a.navbar-brand.js-scroll-trigger(href='#page-top')
+                    include rhombus-logo.svg
+
+                button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto.my-2.my-lg-0
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#about') Nosotras
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#services') Servicios
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#portfolio') Portfolio
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#contact') Contacto
+
+        // Masthead
+        header.masthead
+            .container.h-100
+                .row.h-100.align-items-center.justify-content-center.text-center
+                    .col-lg-10.align-self-end
+                        h1.text-uppercase.text-white.font-weight-bold Somos Rhombus,
+                        h1.text-uppercase.text-white.font-weight-bold somos digitales.
+                        hr.divider.my-4
+                    .col-lg-8.align-self-baseline
+                        p.text-white-75.font-weight-light.mb-5
+                            | Nuestra misión es impulsar tus proyectos, convertir tus sueños en metas, garantizando el posicionamiento de tu marca.
+                        a.btn.btn-primary.btn-xl.js-scroll-trigger(href='#about') Conocenos
+
+        // About
+        section#about.page-section.bg-primary
+            .container
+                .row.justify-content-center
+                    .col-lg-8.text-center
+                        h2.text-white.mt-0 Nosotras
+                        hr.divider.light.my-4
+                        .row.about-us-picture-container
+                            img.col(src='assets/img/pp.jpg' alt='')
+                            img.col(src='assets/img/pp1.jpg' alt='')
+                        p.text-white-50.mb-4
+                            | Somos Celina Comugnaro y Camila Bellis, profesionales del diseño digital, editorial, gráfico y 3D.
+                            | Nos dedicamos desde hace muchos años a capacitarnos y formarnos en esta hermosa profesión que nos hizo colegas.
+                        p.text-white-50.mb-4
+                            | Con Rhombus hemos creado un espacio para mostrar todas nuestras capacidades y dar a nuestros clientes un resultado único, construído con muchísimo trabajo y dedicación.
+                            | Tenemos un amplio conocimiento y una gran experiencia en distintas ramas del diseño para brindarte todo lo necesario en el crecimiento de tu marca.
+                        a.btn.btn-light.btn-xl.js-scroll-trigger(href='#portfolio') Portfolio
+
+        // Services
+        section#services.page-section
+            .container
+                h2.text-center.mt-0 Nuestros servicios
+                hr.divider.my-4
+                .row
+                    .col-lg-3.col-md-6.text-center
+                        .mt-5
+                            include ../svg/iconA.svg
+                            h3.h4.mb-2 Animación 3D
+                            p.text-muted.mb-0 Diseño de personajes, modelado y animación.
+                    .col-lg-3.col-md-6.text-center
+                        .mt-5
+                            include ../svg/iconB.svg
+                            h3.h4.mb-2 Diseño gráfico
+                            p.text-muted.mb-0 Publicidad, branding de marca, cartelería y señalética.
+                    .col-lg-3.col-md-6.text-center
+                        .mt-5
+                            include ../svg/iconC.svg
+                            h3.h4.mb-2 Motion graphics
+                            p.text-muted.mb-0  Animación de personajes 2D, logos y transiciones.
+                    .col-lg-3.col-md-6.text-center
+                        .mt-5
+                            include ../svg/iconD.svg
+                            h3.h4.mb-2 Diseño editorial
+                            p.text-muted.mb-0 Compaginación y preparación de libros y revistas.
+
+        // Portfolio
+        div#portfolio
+            .container-fluid.p-0
+                .row.no-gutters
+                    .col-lg-4.col-sm-6
+                        a.portfolio-box.mfp-iframe(href='https://www.youtube.com/watch?v=hni7wm8oNpQ')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/1.jpg', alt='')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Category
+                                .project-name
+                                    | Project Name
+                    .col-lg-4.col-sm-6
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/2.jpg')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/2.jpg', alt='')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Category
+                                .project-name
+                                    | Project Name
+                    .col-lg-4.col-sm-6
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/3.jpg')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/3.jpg', alt='')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Category
+                                .project-name
+                                    | Project Name
+                    .col-lg-4.col-sm-6
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/4.jpg')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/4.jpg', alt='')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Category
+                                .project-name
+                                    | Project Name
+                    .col-lg-4.col-sm-6
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/5.jpg')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/5.jpg', alt='')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Category
+                                .project-name
+                                    | Project Name
+                    .col-lg-4.col-sm-6
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/6.jpg')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/6.jpg', alt='')
+                            .portfolio-box-caption.p-3
+                                .project-category.text-white-50
+                                    | Category
+                                .project-name
+                                    | Project Name
+
+        // Call to action
+        section.page-section.bg-dark.text-white
+            .container.text-center
+                h2.mb-4 Estamos muy compremetidas con el cuidado de nuestro medio ambiente. Gracias a nuestro último proyecto pudimos ser parte del cambio.
+                h2.mb-4 ¡Ayudanos vos también y firmá la petición para frenar los desmontes!
+                a.btn.btn-light.btn-xl(href='https://startbootstrap.com/themes/creative/') Firmar
+
+        // Contact
+        section#contact.page-section
+            .container
+                .row.justify-content-center
+                    .col-lg-8.text-center
+                        h2.mt-0 ¡Contactanos!
+                        hr.divider.my-4
+                        p.text-muted.mb-5
+                            | ¿Estás listo para empezar tu próximo proyecto con nosotras? Llamanos o envianos un email y te responderemos a la brevedad.
+                .row
+                    .col-lg-4.ml-auto.text-center.mb-5.mb-lg-0
+                        i.fas.fa-phone.fa-3x.mb-3.text-muted
+                        div +54 9 (0341) 153466601
+                    .col-lg-4.mr-auto.text-center
+                        i.fas.fa-envelope.fa-3x.mb-3.text-muted
+
+                        // Make sure to change the email address in BOTH the anchor text and the link target below!
+                        a.d-block(href='mailto:contact@yourwebsite.com') contacto@rhombus.com
+
+        // Footer
+        footer.bg-light.py-5
+            .container
+                .small.text-center.text-muted Copyright © 2020 - Rhombus: Design Studio
+
+        // Bootstrap core JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js')
+
+        // Third party plugin JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
